@@ -220,7 +220,7 @@ function InquiryContent() {
               <div className="space-y-1.5">
                 <label htmlFor="iq-device-sell" className="text-sm font-medium">Device you want to sell *</label>
                 <input id="iq-device-sell" value={form.device} onChange={e => set("device", e.target.value)}
-                  placeholder="e.g. iPhone 13 Pro 256GB, Samsung S22, MacBook Air M1, iPad Pro 13""
+                  placeholder='e.g. iPhone 13 Pro 256GB, Samsung S22, MacBook Air M1, iPad Pro 13"'
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -250,7 +250,7 @@ function InquiryContent() {
               <div className="space-y-1.5">
                 <label htmlFor="iq-device-repair" className="text-sm font-medium">Device to repair *</label>
                 <input id="iq-device-repair" value={form.device} onChange={e => set("device", e.target.value)}
-                  placeholder='e.g. iPhone 14, Samsung S23, MacBook Pro 14", iPad Pro 13"'
+                  placeholder='e.g. iPhone 14, Samsung S23, MacBook Pro 14&quot;, iPad Pro 13&quot;'
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
               </div>
               <div className="space-y-1.5">
