@@ -6,14 +6,14 @@ interface CategoryCardProps {
   description: string;
   href: "/mobiles" | "/laptops" | "/accessories" | "/tablets";
   image: string;
-  accent?: "blue" | "purple" | "green" | "orange";
+  accent?: "blue" | "purple" | "green" | "cyan";
 }
 
 const accentMap = {
   blue:   "from-primary/30 to-transparent",
   purple: "from-purple-glow/30 to-transparent",
   green:  "from-success/30 to-transparent",
-  orange: "from-orange-400/30 to-transparent",
+  cyan:   "from-cyan-400/25 to-transparent",
 };
 
 export function CategoryCard({
