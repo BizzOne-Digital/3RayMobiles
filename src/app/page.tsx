@@ -170,7 +170,7 @@ export default function HomePage() {
             description="iPad Pro, iPad Air and more for work and play."
             href="/tablets"
             image="/The iPad Pro is one of the best iPad lines out….jpg"
-            accent="cyan"
+            accent="teal"
           />
           <CategoryCard
             title="Laptops"

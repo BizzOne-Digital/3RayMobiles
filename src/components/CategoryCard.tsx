@@ -6,14 +6,14 @@ interface CategoryCardProps {
   description: string;
   href: "/mobiles" | "/laptops" | "/accessories" | "/tablets";
   image: string;
-  accent?: "blue" | "purple" | "green" | "cyan";
+  accent?: "blue" | "purple" | "green" | "teal";
 }
 
 const accentMap = {
-  blue:   "from-primary/30 to-transparent",
-  purple: "from-purple-glow/30 to-transparent",
-  green:  "from-success/30 to-transparent",
-  cyan:   "from-cyan-400/25 to-transparent",
+  blue:   "from-primary/20 to-transparent",
+  purple: "from-purple-glow/20 to-transparent",
+  green:  "from-success/20 to-transparent",
+  teal:   "from-teal-500/20 to-transparent",
 };
 
 export function CategoryCard({
@@ -28,7 +28,7 @@ export function CategoryCard({
       href={href}
       className="group relative overflow-hidden rounded-2xl border border-border/60 bg-surface card-hover"
     >
-      <div className={`absolute inset-0 bg-gradient-to-br ${accentMap[accent]} opacity-60 group-hover:opacity-100 transition-opacity`} />
+      <div className={`absolute inset-0 bg-gradient-to-br ${accentMap[accent]} opacity-50 group-hover:opacity-80 transition-opacity`} />
       <div className="relative grid grid-cols-2 items-center gap-4 p-6 md:p-8 min-h-[220px]">
         <div className="space-y-3">
           <h3 className="text-2xl font-bold tracking-tight">{title}</h3>
