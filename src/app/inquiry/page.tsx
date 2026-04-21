@@ -33,6 +33,7 @@ const deviceConditions = ["Like New", "Good", "Fair", "Poor", "Cracked screen", 
 const storageOptions   = ["16GB", "32GB", "64GB", "128GB", "256GB", "512GB", "1TB", "Other"];
 
 const mobileProducts    = products.filter(p => p.category === "mobiles");
+const tabletProducts    = products.filter(p => p.category === "tablets");
 const laptopProducts    = products.filter(p => p.category === "laptops");
 const accessoryProducts = products.filter(p => p.category === "accessories");
 
@@ -193,6 +194,9 @@ function InquiryContent() {
                   <optgroup label="📱 Mobiles">
                     {mobileProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
                   </optgroup>
+                  <optgroup label="📟 Tablets">
+                    {tabletProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
+                  </optgroup>
                   <optgroup label="💻 Laptops">
                     {laptopProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
                   </optgroup>
@@ -216,7 +220,7 @@ function InquiryContent() {
               <div className="space-y-1.5">
                 <label htmlFor="iq-device-sell" className="text-sm font-medium">Device you want to sell *</label>
                 <input id="iq-device-sell" value={form.device} onChange={e => set("device", e.target.value)}
-                  placeholder="e.g. iPhone 13 Pro 256GB, Samsung S22, MacBook Air M1"
+                  placeholder="e.g. iPhone 13 Pro 256GB, Samsung S22, MacBook Air M1, iPad Pro 13""
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -246,7 +250,7 @@ function InquiryContent() {
               <div className="space-y-1.5">
                 <label htmlFor="iq-device-repair" className="text-sm font-medium">Device to repair *</label>
                 <input id="iq-device-repair" value={form.device} onChange={e => set("device", e.target.value)}
-                  placeholder='e.g. iPhone 14, Samsung S23, MacBook Pro 14"'
+                  placeholder='e.g. iPhone 14, Samsung S23, MacBook Pro 14", iPad Pro 13"'
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
               </div>
               <div className="space-y-1.5">
