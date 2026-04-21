@@ -157,13 +157,20 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-2">Shop by category</p>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Find your next device</h2>
         </div>
-        <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-3">
+        <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <CategoryCard
             title="Mobiles"
             description="Latest flagships and certified pre-owned phones."
             href="/mobiles"
             image="/Google Pixel 7.jpeg"
             accent="blue"
+          />
+          <CategoryCard
+            title="Tablets"
+            description="iPad Pro, iPad Air and more for work and play."
+            href="/tablets"
+            image="/The iPad Pro is one of the best iPad lines out….jpg"
+            accent="orange"
           />
           <CategoryCard
             title="Laptops"

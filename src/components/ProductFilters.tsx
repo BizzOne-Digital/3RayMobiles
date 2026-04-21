@@ -117,7 +117,7 @@ function FilterContent({
 export function ProductFilters({
   filters,
   onChange,
-  availableCategories = ["mobiles", "laptops", "accessories"],
+  availableCategories = ["mobiles", "tablets", "laptops", "accessories"],
   availableBrands,
   showCategory = true,
 }: ProductFiltersProps) {

@@ -5,13 +5,14 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
   Menu, X, Search, ChevronDown,
-  Smartphone, Laptop, Headphones, Wrench, Info, Phone, LayoutGrid,
+  Smartphone, Laptop, Headphones, Wrench, Info, Phone, LayoutGrid, Tablet,
 } from "lucide-react";
 import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 
 const shopLinks = [
   { href: "/mobiles",     label: "Mobiles",      icon: Smartphone, desc: "iPhones, Samsung, Google Pixel" },
+  { href: "/tablets",     label: "Tablets",      icon: Tablet,     desc: "iPad Pro, iPad Air & more" },
   { href: "/laptops",     label: "Laptops",      icon: Laptop,     desc: "MacBook, Gaming, Business" },
   { href: "/accessories", label: "Accessories",  icon: Headphones, desc: "Earbuds, Chargers, Cases" },
   { href: "/products",    label: "All Products", icon: LayoutGrid, desc: "Browse the full catalog" },
@@ -53,7 +54,7 @@ export function Navbar() {
     setOpen(false);
   };
 
-  const isShopActive = ["/mobiles", "/laptops", "/accessories", "/products"].includes(pathname);
+  const isShopActive = ["/mobiles", "/tablets", "/laptops", "/accessories", "/products"].includes(pathname);
 
   return (
     <header className="sticky top-0 z-50 w-full">

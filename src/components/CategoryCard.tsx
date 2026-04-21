@@ -4,15 +4,16 @@ import { ArrowUpRight } from "lucide-react";
 interface CategoryCardProps {
   title: string;
   description: string;
-  href: "/mobiles" | "/laptops" | "/accessories";
+  href: "/mobiles" | "/laptops" | "/accessories" | "/tablets";
   image: string;
-  accent?: "blue" | "purple" | "green";
+  accent?: "blue" | "purple" | "green" | "orange";
 }
 
 const accentMap = {
   blue:   "from-primary/30 to-transparent",
   purple: "from-purple-glow/30 to-transparent",
   green:  "from-success/30 to-transparent",
+  orange: "from-orange-400/30 to-transparent",
 };
 
 export function CategoryCard({

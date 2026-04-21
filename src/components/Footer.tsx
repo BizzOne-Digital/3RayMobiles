@@ -22,6 +22,7 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-foreground mb-3">Shop</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="/mobiles" className="hover:text-foreground transition-colors">Mobiles</Link></li>
+              <li><Link href="/tablets" className="hover:text-foreground transition-colors">Tablets</Link></li>
               <li><Link href="/laptops" className="hover:text-foreground transition-colors">Laptops</Link></li>
               <li><Link href="/accessories" className="hover:text-foreground transition-colors">Accessories</Link></li>
               <li><Link href="/products" className="hover:text-foreground transition-colors">All Products</Link></li>
