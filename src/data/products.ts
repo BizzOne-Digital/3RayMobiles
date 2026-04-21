@@ -3,6 +3,7 @@ import type { Product } from "@/types/product";
 // ─── Real product photos from /public folder ──────────────────────────────
 const PUB = {
   // iPhones
+  iphone17promax: "/IPhone 17 pro max (1).jpg",
   iphoneX:      "/Iphone x.jpeg",
   iphoneXs:     "/iphone xs.jpeg",
   iphone11:     "/Iphone 11.jpeg",
@@ -28,6 +29,8 @@ const PUB = {
   sonyEarbuds:  "/sony wf1000xm5.jpeg",
   jabra:        "/jabra elite 10.jpeg",
   spigenCase:   "/spigen tough armor.jpeg",
+  // Tablets
+  ipadPro13:    "/The iPad Pro is one of the best iPad lines out….jpg",
 };
 
 // ─── Pexels fallbacks for products without a local photo ──────────────────
@@ -113,6 +116,14 @@ export const products: Product[] = [
     specs: ['6.9" Super Retina XDR OLED, 120Hz', "A18 Pro chip", "256GB / 512GB / 1TB", "Triple 48MP + 5x zoom", "Camera Control button", "Titanium, IP68"],
     featured: true,
   },
+  {
+    id: "ip-17pro", slug: "iphone-17-pro-max", name: "iPhone 17 Pro Max (eSIM, CA Spec)",
+    brand: "Apple", category: "mobiles", condition: "New",
+    image: PUB.iphone17promax, gallery: [PUB.iphone17promax, PUB.iphone16pro],
+    description: "The most advanced iPhone ever. Canadian spec eSIM model available in all colours. A19 Pro chip, next-generation camera system with 5x optical zoom, and the thinnest Pro design yet.",
+    specs: ['6.9" Super Retina XDR OLED, ProMotion 120Hz', "A19 Pro chip", "256GB / 512GB / 1TB", "Triple 48MP + 5x optical zoom", "Camera Control button", "eSIM only · CA Spec · All Colours", "Titanium frame, IP68"],
+    featured: true,
+  },
 
   // ══════════════════════════════════════════════════════
   // MOBILES — Google Pixels
@@ -172,6 +183,19 @@ export const products: Product[] = [
     image: PUB.galaxyS23, gallery: [PUB.galaxyS23, PUB.galaxyS24],
     description: "Snapdragon 8 Gen 2 performance with a 50MP camera. Certified pre-owned in excellent condition.",
     specs: ['6.1" Dynamic AMOLED 2X, 120Hz', "Snapdragon 8 Gen 2", "8GB RAM · 128GB / 256GB", "50MP triple camera", "5G", "IP68 rated"],
+  },
+
+  // ══════════════════════════════════════════════════════
+  // TABLETS — iPad
+  // ══════════════════════════════════════════════════════
+  {
+    id: "ipad-pro-13-m5", slug: "apple-ipad-pro-13-m5-256gb-space-black",
+    name: 'Apple iPad Pro 13" M5 Wi-Fi 256GB Space Black',
+    brand: "Apple", category: "tablets", condition: "New",
+    image: PUB.ipadPro13, gallery: [PUB.ipadPro13],
+    description: "The most powerful iPad ever. M5 chip delivers desktop-class performance in an impossibly thin design. Model MDYJ4LL/A — Space Black, 256GB Wi-Fi.",
+    specs: ['13" Ultra Retina XDR OLED, ProMotion 120Hz', "Apple M5 chip", "16GB unified memory · 256GB storage", "Wi-Fi 6E + Bluetooth 5.3", "12MP Wide + 12MP Ultra Wide cameras", "USB-C Thunderbolt 4", "Apple Pencil Pro & Magic Keyboard compatible", "Model: MDYJ4LL/A · Space Black"],
+    featured: true,
   },
 
   // ══════════════════════════════════════════════════════

@@ -1,4 +1,4 @@
-export type Category = "mobiles" | "laptops" | "accessories";
+export type Category = "mobiles" | "laptops" | "accessories" | "tablets";
 export type Condition = "New" | "Used";
 export type AccessoryType = "Earbuds" | "Chargers" | "Cases" | "Smartwatches";
 export type LaptopType = "Business" | "Gaming" | "Student";
