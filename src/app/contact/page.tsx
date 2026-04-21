@@ -36,6 +36,7 @@ const storageOptions   = ["16GB", "32GB", "64GB", "128GB", "256GB", "512GB", "1T
 
 // Group products by category for the buy dropdown
 const mobileProducts    = products.filter(p => p.category === "mobiles");
+const tabletProducts    = products.filter(p => p.category === "tablets");
 const laptopProducts    = products.filter(p => p.category === "laptops");
 const accessoryProducts = products.filter(p => p.category === "accessories");
 
@@ -283,6 +284,9 @@ export default function ContactPage() {
                     <option value="">— Select a product (optional) —</option>
                     <optgroup label="📱 Mobiles">
                       {mobileProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
+                    </optgroup>
+                    <optgroup label="📟 Tablets">
+                      {tabletProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
                     </optgroup>
                     <optgroup label="💻 Laptops">
                       {laptopProducts.map(p => <option key={p.id} value={p.name}>{p.name} · {p.brand} · {p.condition}</option>)}
